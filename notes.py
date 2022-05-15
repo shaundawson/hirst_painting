@@ -25,11 +25,36 @@ timmy_the_turtle.color("OliveDrab")
 
 
 #Draw Dashed Line
-for i in range(15):
-    timmy_the_turtle.forward(10)
-    timmy_the_turtle.penup()
-    timmy_the_turtle.forward(10)
-    timmy_the_turtle.pendown()
+# for i in range(15):
+#     timmy_the_turtle.forward(10)
+#     timmy_the_turtle.penup()
+#     timmy_the_turtle.forward(10)
+#     timmy_the_turtle.pendown()
+
+
+
+
+#Draw a triangle, square, pentagon, hexagon, heptagon, octagon, nonagon and decagon
+
+# taking input for the no of the sides of the polygon
+# n = int(input("Enter the no of the sides of the polygon : "))
+  
+# taking input for the length of the sides of the polygon
+# l = int(input("Enter the length of the sides of the polygon : "))
+  
+
+# for _ in range(n):
+#     timmy_the_turtle.forward(l)
+#     timmy_the_turtle.right(360 / n)
+
+def draw_shape(num_sides):
+    angle = 360 / num_sides
+    for _ in range(num_sides):
+        timmy_the_turtle.forward(100)
+        timmy_the_turtle.right(angle)
+
+for shape_side_n in range(3,11):
+    draw_shape(shape_side_n)
 
 
 
