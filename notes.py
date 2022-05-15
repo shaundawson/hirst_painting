@@ -17,11 +17,19 @@ timmy_the_turtle.color("OliveDrab")
 
 # draw_square()
 
+# for _ in range(4):
+#     timmy_the_turtle.forward(100)
+#     timmy_the_turtle.right(90)
 
-for _ in range(4):
-    timmy_the_turtle.forward(100)
-    timmy_the_turtle.right(90)
 
+
+
+#Draw Dashed Line
+for i in range(15):
+    timmy_the_turtle.forward(10)
+    timmy_the_turtle.penup()
+    timmy_the_turtle.forward(10)
+    timmy_the_turtle.pendown()
 
 
 
