@@ -6,3 +6,6 @@ https://docs.python.org/3/library/turtle.html
 
 RGB Colors Tool
 https://www.w3schools.com/colors/colors_rgb.asp
+
+colorgram.py 1.2.0
+https://pypi.org/project/colorgram.py/
