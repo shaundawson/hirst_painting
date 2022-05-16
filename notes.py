@@ -62,6 +62,7 @@ colours = ["CornflowerBlue","DarkOrchid", "IndianRed", "wheat","DeepSkyBlue", "L
 #     draw_shape(shape_side_n)
 
 directions = [0, 90, 180, 270]
+timmy_the_turtle.pensize(15)
 
 for _ in range(200):
     timmy_the_turtle.color(random.choice(colours))
