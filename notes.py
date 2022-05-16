@@ -48,19 +48,24 @@ timmy_the_turtle.color("OliveDrab")
 #     timmy_the_turtle.forward(l)
 #     timmy_the_turtle.right(360 / n)
 
-colours = ["DarkOrchid", "IndianRed", "wheat", "SeaGreen"]
+colours = ["CornflowerBlue","DarkOrchid", "IndianRed", "wheat","DeepSkyBlue", "LightSeaGreen", "SlateGray", "SeaGreen"]
 
 
-def draw_shape(num_sides):
-    angle = 360 / num_sides
-    for _ in range(num_sides):
-        timmy_the_turtle.forward(100)
-        timmy_the_turtle.right(angle)
+# def draw_shape(num_sides):
+#     angle = 360 / num_sides
+#     for _ in range(num_sides):
+#         timmy_the_turtle.forward(100)
+#         timmy_the_turtle.right(angle)
 
-for shape_side_n in range(3,11):
-    timmy_the_turtle.color(random.choice(colours))
-    draw_shape(shape_side_n)
+# for shape_side_n in range(3,11):
+#     timmy_the_turtle.color(random.choice(colours))
+#     draw_shape(shape_side_n)
 
+directions = [0, 90, 180, 270]
+
+for _ in range(200):
+    timmy_the_turtle.forward(30)
+    timmy_the_turtle.setheading(random.choice(directions))
 
 
 screen = Screen()
